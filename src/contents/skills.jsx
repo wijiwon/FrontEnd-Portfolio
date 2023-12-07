@@ -1,6 +1,6 @@
 import { Wrapper, Heading } from '../components/common'
-import { DiJavascript, DiNodejs, DiGithubBadge } from 'react-icons/di'
-import { SiNextdotjs, SiTypescript, SiJavascript, SiExpress, SiReact } from 'react-icons/si'
+import { DiJavascript, DiNodejs, DiGithubBadge, DiMysql } from 'react-icons/di'
+import { SiNextdotjs, SiTypescript, SiJavascript, SiExpress, SiReact, SiSolidity } from 'react-icons/si'
 
 const Skills = () => {
     return (
@@ -18,15 +18,8 @@ const Skills = () => {
                                 <span className="md:w-[120px]">Javascript</span>
                             </span>
                             <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
-                                <li>
-                                    변수를 선언할줄
-                                    암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!
-                                    암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!
-                                </li>
-                                <li>Console.log 잘찍음</li>
-                                <li>연산자 사용할줄암!</li>
-                                <li>조건문을 배움</li>
-                                <li>배열 메서드를 능숙하게 다룸!</li>
+                                <li>배열과 문자열의 메소드 활용 가능</li>
+                                <li>구조 분해 할당 사용</li>
                             </ul>
                         </li>
 
@@ -36,11 +29,18 @@ const Skills = () => {
                                 <span className="md:w-[120px]">Typescript</span>
                             </span>
                             <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
-                                <li>Typescript 세팅할줄암!!!!!!!!!!!</li>
-                                <li>Console.log 잘찍음</li>
-                                <li>연산자 사용할줄암!</li>
-                                <li>조건문을 배움</li>
-                                <li>배열 메서드를 능숙하게 다룸!</li>
+                                <li>Typescript 환경설정 가능</li>
+                                <li>interface와 type의 차이를 암</li>
+                            </ul>
+                        </li>
+                        <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline">
+                            <span className="text-[16px] text-slate-600 md:text-[24px] basis-[20%] flex items-center gap-[8px]">
+                                <SiSolidity />
+                                <span className="md:w-[120px]">Solidity</span>
+                            </span>
+                            <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
+                                <li>ERC20 개념 숙지</li>
+                                <li>Dex 구조 숙지</li>
                             </ul>
                         </li>
                     </ul>
@@ -57,22 +57,8 @@ const Skills = () => {
                                 <span className="md:w-[120px]">React</span>
                             </span>
                             <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
-                                <li>CRA로 프로젝트 다수 생성 경험 보유!</li>
-                                <li>상태에 대해서 설명할수있음!</li>
-                                <li>브라우저 랜더링 과정을 설명 할 수 있음!</li>
-                            </ul>
-                        </li>
-
-                        <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline">
-                            <span className="text-[16px] text-slate-600 md:text-[24px] basis-[20%] flex items-center gap-[8px]">
-                                <SiNextdotjs />
-                                <span className="md:w-[120px]">NextJS</span>
-                            </span>
-                            <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
-                                <li>Client Component 암!</li>
-                                <li>동적라우팅 사용해봄!</li>
-                                <li>interface 배우는중!</li>
-                                <li>any 잘씀!</li>
+                                <li>재사용성을 고려하여 컴포넌트 구성하려고 노력</li>
+                                <li>기능 구현 시 리렌더링을 최소화하고자 노력</li>
                             </ul>
                         </li>
                     </ul>
@@ -90,6 +76,22 @@ const Skills = () => {
                             </span>
                             <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
                                 <li>RestFul API 스럽게 할라고 노력함!</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li className="flex flex-row gap-[32px] py-[32px]">
+                    <h3 className="text-[16px] md:text-[24px] font-extrabold md:font-semibold w-[20%] basisc-[25%]">
+                        etc
+                    </h3>
+                    <ul className="flex flex-col gap-[16px] text-[16px] pb-[32px] font-medium w-full items-start">
+                        <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline">
+                            <span className="text-[16px] text-slate-600 md:text-[24px] basis-[20%] flex items-center gap-[8px]">
+                                <DiMysql />
+                                <span className="md:w-[120px]">Mysql</span>
+                            </span>
+                            <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
+                                <li>Workbench 사용하여 DB 관리 가능</li>
                             </ul>
                         </li>
                     </ul>
