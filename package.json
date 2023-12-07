@@ -2,7 +2,7 @@
     "name": "portfolio",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://ingoo-blockchain.github.io/portfolio_sample/",
+    "homepage": "https://wijiwon.github.io/FrontEnd-Portfolio/",
     "dependencies": {
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
@@ -24,7 +24,6 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
-    "homepage": "https://wijiwon.github.io/FrontEnd-Portfolio/",
     "eslintConfig": {
         "extends": [
             "react-app",
