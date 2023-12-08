@@ -1,23 +1,15 @@
 import { Wrapper, Heading } from '../components/common'
 import { FaExternalLinkAlt, FaHardHat } from 'react-icons/fa'
 import { DiJavascript, DiNodejs, DiGithubBadge, DiMysql } from 'react-icons/di'
-import {
-    SiExpress,
-    SiNextdotjs,
-    SiReactquery,
-    SiSocketdotio,
-    SiSolidity,
-    SiTailwindcss,
-    SiTypescript,
-} from 'react-icons/si'
-import { DiTrello } from 'react-icons/di'
+import { SiExpress, SiReactquery, SiSocketdotio, SiSolidity, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import { DiReact } from 'react-icons/di'
 import useModal from '../hooks/useModal'
 import Modal from '../components/modal'
 import { FaAws, FaFigma } from 'react-icons/fa6'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper/modules'
+
 import 'swiper/css'
+import { Navigation, Pagination, A11y, Scrollbar } from 'swiper/modules'
 import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
 
@@ -226,13 +218,15 @@ const Projects = () => {
 
             <Modal show={isShowingModal} onCloseButtonClick={toggleModal}>
                 <Swiper
+                    className="h-[400px]"
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={50}
                     slidesPerView={1}
-                    onSlideChange={() => console.log('slide change')}
+                    navigation
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
-                    autoplay={{ delay: 1000, disableOnInteraction: false }}
-                    loop={true}
-                    className="h-[400px]"
+                    onSlideChange={() => console.log('slide change')}
                 >
                     <SwiperSlide>
                         <img src={process.env.PUBLIC_URL + '/Bounswap 1.png'} alt="Bounswap1" />
@@ -282,13 +276,15 @@ const Projects = () => {
 
             <Modal show={isShowingModal2} onCloseButtonClick={toggleModal2}>
                 <Swiper
+                    className="h-[400px]"
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={50}
                     slidesPerView={1}
-                    onSlideChange={() => console.log('slide change')}
+                    navigation
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
-                    autoplay={{ delay: 1000, disableOnInteraction: false }}
-                    loop={true}
-                    className="h-[400px]"
+                    onSlideChange={() => console.log('slide change')}
                 >
                     <SwiperSlide>
                         <img src={process.env.PUBLIC_URL + '/NoBroker 1.png'} alt="NoBroker1" />
@@ -328,37 +324,45 @@ const Projects = () => {
                                 NASA Worldwind API를 활용한 3D 지구 구현. 원하는 좌표에 핀을 찍어 매물이 위치한 나라를
                                 표시
                             </li>
-                            <li>회원가입 시, kakaoMap API를 활용하여 사용자의 거주지 입력과 multer를 활용해 사용자의 인감등의 증빙자료 첨부. Mysql을 활용하여 DB에 회원의 정보 저장.</li>
-                            <li>jwt accessToken을 활용한 로그인 구현. jwt.verify를 활용한 로그인 상태를검증하는 미들웨어 구현.</li>
+                            <li>
+                                회원가입 시, kakaoMap API를 활용하여 사용자의 거주지 입력과 multer를 활용해 사용자의
+                                인감등의 증빙자료 첨부. Mysql을 활용하여 DB에 회원의 정보 저장.
+                            </li>
+                            <li>
+                                jwt accessToken을 활용한 로그인 구현. jwt.verify를 활용한 로그인 상태를검증하는 미들웨어
+                                구현.
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </Modal>
 
             <Modal show={isShowingModal3} onCloseButtonClick={toggleModal3}>
-            <Swiper
+                <Swiper
+                    className="h-[400px]"
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={50}
                     slidesPerView={1}
-                    onSlideChange={() => console.log('slide change')}
+                    navigation
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
-                    autoplay={{ delay: 1000, disableOnInteraction: false }}
-                    loop={true}
-                    className="h-[400px]"
+                    onSlideChange={() => console.log('slide change')}
                 >
                     <SwiperSlide>
-                        <img src={process.env.PUBLIC_URL + '/painting 1.gif'} alt="painting1" />
+                        <img src={process.env.PUBLIC_URL + '/painting 1.gif'} alt="painting1" className="m-auto" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={process.env.PUBLIC_URL + '/painting 2.gif'} alt="painting2" />
+                        <img src={process.env.PUBLIC_URL + '/painting 2.gif'} alt="painting2" className="m-auto" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={process.env.PUBLIC_URL + '/painting 3.gif'} alt="painting3" />
+                        <img src={process.env.PUBLIC_URL + '/painting 3.gif'} alt="painting3" className="m-auto" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={process.env.PUBLIC_URL + '/painting 4.png'} alt="painting4" />
+                        <img src={process.env.PUBLIC_URL + '/painting 4.png'} alt="painting4" className="m-auto" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={process.env.PUBLIC_URL + '/painting 5.png'} alt="painting5" />
+                        <img src={process.env.PUBLIC_URL + '/painting 5.png'} alt="painting5" className="m-auto" />
                     </SwiperSlide>
                 </Swiper>
                 <ul className="mt-5">
@@ -376,7 +380,8 @@ const Projects = () => {
                         <span className="font-bold text-[18px]">개발 인원</span> 4명
                     </li>
                     <li>
-                        <span className="font-bold text-[18px]">주요 업무</span> 프론트앤드, 백앤드 담당 (그림판, 게임로직, CSS 총괄 담당)
+                        <span className="font-bold text-[18px]">주요 업무</span> 프론트앤드, 백앤드 담당 (그림판,
+                        게임로직, CSS 총괄 담당)
                         <ul className="ml-7 list-disc list-outside">
                             <li>
                                 canvas를 이용한 그림판 제작 및 captureStream과 MediaRecorder을 이용한 그림 녹화 구현
