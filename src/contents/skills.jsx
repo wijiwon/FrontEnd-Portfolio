@@ -117,19 +117,19 @@ const Skills = () => {
                         <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline mt-4">
                             <span className="text-[16px] text-slate-600 md:text-[20px] basis-[20%] flex items-center gap-[8px]">
                                 <SiTailwindcss />
-                                <span className="md:w-[100px]">Tailwind</span>
+                                <span className="mr-6">Tailwind</span>
                             </span>
                             <span className="text-[16px] text-slate-600 md:text-[20px] basis-[20%] flex items-center gap-[8px]">
                                 <FaAws />
-                                <span className="md:w-[100px]">AWS</span>
+                                <span className="mr-6">AWS</span>
                             </span>
                             <span className="text-[16px] text-slate-600 md:text-[20px] basis-[20%] flex items-center gap-[8px]">
                                 <DiPhotoshop />
-                                <span className="md:w-[100px]">Photoshop</span>
+                                <span className="mr-6">Photoshop</span>
                             </span>
                             <span className="text-[16px] text-slate-600 md:text-[20px] basis-[20%] flex items-center gap-[8px]">
                                 <FaFigma />
-                                <span className="md:w-[100px]">Figma</span>
+                                <span className="mr-6">Figma</span>
                             </span>
                         </li>
                     </ul>
